@@ -35,7 +35,7 @@ def delite_student():
         case '1':
             mem = pd.read_csv('E:/Документы/GeekBrains/Знакомство c Python/homework_8/students_data.csv')
             mem = mem.set_index('id')
-            mem.drop([id.delete_vvod('Личный идентификатор студента (id)')], axis=0, inplace=True)
+            mem.drop([int(id.delete_vvod('Личный идентификатор студента (id)'))], axis=0, inplace=True)
             mem.to_csv('E:/Документы/GeekBrains/Знакомство c Python/homework_8/students_data.csv', index=False)
         case '2':
             mem = pd.read_csv('E:/Документы/GeekBrains/Знакомство c Python/homework_8/students_data.csv')
